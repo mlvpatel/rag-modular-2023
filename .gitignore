@@ -9,19 +9,21 @@ secrets/
 credentials.json
 service-account*.json
 
-# Claude Code governance and agent files (rule 8: never push)
+# Claude Code governance and agent files (rule 8: never push). Governance dirs
+# are anchored to the repo root so they never match .github/workflows or a
+# similarly named application directory.
 CLAUDE.md
 CLAUDE.local.md
 AGENTS.md
 mcp.json
-.claude/
-rules/
-commands/
-skills/
-agents/
-hooks/
-memory/
-workflows/
+/.claude/
+/rules/
+/commands/
+/skills/
+/agents/
+/hooks/
+/memory/
+/workflows/
 
 # Agent and LLM tool output
 graphify-out/
