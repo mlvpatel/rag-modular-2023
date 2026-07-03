@@ -180,7 +180,7 @@ configs/          dev and prod profiles
 
 ## Author
 
-Malav Patel. GitHub @mlvpatel. Email malav.patel203@gmail.com.
+Malav Patel. GitHub @mlvpatel.
 
 ## License
 
