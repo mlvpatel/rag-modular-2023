@@ -79,11 +79,19 @@ def get_final_retriever():
 
 
 def warm_reranker() -> None:
-    """Load the reranker at startup so the first chat request is not slow."""
-    if settings.use_reranker:
+    """Load the reranker at startup so the first chat request is not slow.
+
+    Never fatal: if the reranker cannot load (for example torch is not
+    installed in this environment), log a warning and continue.
+    """
+    if not settings.use_reranker:
+        return
+    try:
         from src.retrieval.retrievers import get_reranker
 
         get_reranker()
+    except Exception as exc:
+        logger.warning("Reranker warm-up skipped: %s", exc)
 
 
 def _to_lc_messages(chat_history) -> List[Any]:
