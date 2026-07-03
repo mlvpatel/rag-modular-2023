@@ -1,0 +1,10 @@
+# RagFlowPro development profile.
+# Loaded by src/core/config.py when ENV=dev (the default). Environment
+# variables always override these values.
+log_level: DEBUG
+embedding_provider: google
+use_reranker: true
+top_k: 5
+reranker_top_n: 5
+chunk_size: 1000
+chunk_overlap: 200

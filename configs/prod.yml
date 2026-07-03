@@ -1,0 +1,10 @@
+# RagFlowPro production profile.
+# Loaded by src/core/config.py when ENV=prod. Environment variables always
+# override these values (Docker and Kubernetes set them at runtime).
+log_level: INFO
+embedding_provider: google
+use_reranker: true
+top_k: 5
+reranker_top_n: 5
+chunk_size: 1000
+chunk_overlap: 200
