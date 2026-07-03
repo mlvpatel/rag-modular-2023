@@ -1,0 +1,54 @@
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+secrets/
+credentials.json
+service-account*.json
+
+# Claude Code governance and agent files (rule 8: never push)
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+mcp.json
+.claude/
+rules/
+commands/
+skills/
+agents/
+hooks/
+memory/
+workflows/
+
+# Agent and LLM tool output
+graphify-out/
+.graphify_*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# RAG data and models
+chroma_db/
+data/uploads/
+models/
+*.sqlite
+*.db
+
+# Logs
+*.log
+logs/
+
+# OS and editor
+.DS_Store
+.idea/
+.vscode/
