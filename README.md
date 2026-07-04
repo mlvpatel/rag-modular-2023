@@ -4,11 +4,11 @@
 
 RagFlowPro answers questions about your own documents. It combines dense vector search and sparse keyword search inside the database, streams grounded answers token by token, remembers the conversation, and can run fully locally at no cost or against cloud models in production.
 
-![RagFlowPro answering a question about its own retrieval, running locally on llama3.2](assets/screenshots/ragflowpro-ui-working.png)
+![RagFlowPro answering a document question live on a local model](assets/videos/ragflowpro-demo.gif)
 
-The screenshot above is a live run. The model is a local llama3.2, the document was indexed into pgvector, and the answer is grounded in that document. No paid keys were used.
+The animation above is a live, unedited run. The model is a local llama3.2, the documents (including a real SEC 10-K) are indexed in pgvector, and the answer streams in grounded in them. No paid keys were used.
 
-**Demo:** a short screen recording of the working chatbot is at [assets/videos/ragflowpro-demo.webm](assets/videos/ragflowpro-demo.webm) (plays in any modern browser), and a screenshot of it answering from a real SEC 10-K filing is at [assets/screenshots/ragflowpro-sample-data-demo.png](assets/screenshots/ragflowpro-sample-data-demo.png).
+**Full recording and stills:** the complete screen recording of all four questions is at [assets/videos/ragflowpro-demo.webm](assets/videos/ragflowpro-demo.webm), and a full resolution screenshot is at [assets/screenshots/ragflowpro-sample-data-demo.png](assets/screenshots/ragflowpro-sample-data-demo.png).
 
 [![CI](https://github.com/mlvpatel/RagFlowPro/actions/workflows/ci.yml/badge.svg)](https://github.com/mlvpatel/RagFlowPro/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) ![Postgres](https://img.shields.io/badge/Postgres-pgvector-blue) ![Coverage](https://img.shields.io/badge/coverage-86%25-brightgreen) ![License](https://img.shields.io/badge/license-MIT-green)
 
