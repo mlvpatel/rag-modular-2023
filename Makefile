@@ -3,7 +3,7 @@
 
 COMPOSE = docker compose -f docker/docker-compose.yml
 
-.PHONY: help db-up db-down stack-up stack-down install dev worker frontend test test-int eval lint format audit
+.PHONY: help db-up db-down stack-up stack-down install dev worker frontend load-samples test test-int eval lint format audit
 
 help:
 	@echo "db-up      start postgres (pgvector) and redis for local build and tests"
@@ -14,6 +14,7 @@ help:
 	@echo "dev        run the api locally"
 	@echo "worker     run the celery worker locally"
 	@echo "frontend   run the streamlit ui locally"
+	@echo "load-samples load the bundled sample documents into the vector db"
 	@echo "test       run unit tests"
 	@echo "test-int   run integration tests (needs db-up)"
 	@echo "eval       run the rag evaluation harness"
@@ -44,6 +45,9 @@ worker:
 
 frontend:
 	. .venv/bin/activate && streamlit run frontend/streamlit_app.py --server.port 8501
+
+load-samples:
+	. .venv/bin/activate && python scripts/load_sample_data.py
 
 test:
 	. .venv/bin/activate && pytest tests/unit -q

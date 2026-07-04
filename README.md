@@ -110,6 +110,16 @@ make frontend          # streamlit on :8501, in a third terminal
 
 Upload a document in the sidebar, choose the llama3.2:3b model, and ask a question. The answer streams back grounded in your document.
 
+## Try it with the bundled sample data
+
+The repo ships with sample documents in [sample_data](sample_data), an HR handbook, a product FAQ, and a real SEC 10-K excerpt, so you can run and evaluate the system without supplying your own files. With the stack up, load them in one command:
+
+```bash
+make load-samples
+```
+
+Then ask the questions listed in [sample_data/README.md](sample_data/README.md) and compare the answers to the expected ones, including a memory follow up and an honesty check where it should decline to answer rather than guess.
+
 ## Configuration
 
 Configuration comes from environment variables, with optional profiles in `configs/dev.yml` and `configs/prod.yml`. Environment variables always take precedence.
