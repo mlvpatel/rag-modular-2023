@@ -2,6 +2,8 @@
 
 **Retrieval augmented generation chatbot with hybrid retrieval, streaming answers, and a measurable quality gate.**
 
+**Part of the RagFlow line, enterprise RAG built year by year. This repository is RagFlowPro, Modular production RAG, 2024.** See [the full line](#the-ragflow-line) below.
+
 RagFlowPro answers questions about your own documents. It combines dense vector search and sparse keyword search inside the database, streams grounded answers token by token, remembers the conversation, and can run fully locally at no cost or against cloud models in production.
 
 ![RagFlowPro answering a document question live on a local model](assets/videos/ragflowpro-demo.gif)
@@ -189,6 +191,18 @@ tests/            unit and integration tests
 docker/           Dockerfile and Compose stack
 configs/          dev and prod profiles
 ```
+
+## The RagFlow line
+
+RagFlowPro is one rung in a year by year line of enterprise RAG systems, each a faithful snapshot of the best production RAG of its year.
+
+| Year | Repository | Generation |
+|---|---|---|
+| 2022 | RagFlow | Naive RAG, single dense retrieval |
+| 2023 | [RagFlowPlus](https://github.com/mlvpatel/RagFlowPlus) | Advanced RAG, hybrid retrieval and reranking |
+| 2024 | RagFlowPro, this repo | Modular production RAG, pgvector, streaming, evaluation |
+| 2025 | RagFlowProPlus, RagFlowKAG | Agentic RAG, knowledge graph with reasoning |
+| 2026 | RagFlowProMax, UltimateRAG | Multi agent enterprise, multimodal |
 
 ## Author
 
