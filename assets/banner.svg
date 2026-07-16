@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="RagChatBot, Modular RAG">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#042f2e"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#6ee7b7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="17" fill="none" stroke="#2dd4bf" stroke-opacity="0.25" stroke-width="3"/>
+
+  <!-- title block -->
+  <rect x="64" y="74" width="56" height="10" rx="5" fill="url(#ac)"/>
+  <text x="64" y="146" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#f8fafc">RagChatBot</text>
+  <text x="64" y="196" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#2dd4bf">Modular RAG</text>
+  <text x="64" y="232" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#cbd5e1">pgvector, RRF in SQL, streaming, memory</text>
+  <rect x="64" y="258" width="186.0" height="34" rx="17" fill="#f8fafc" fill-opacity="0.08" stroke="#2dd4bf" stroke-opacity="0.5"/>
+  <text x="157.0" y="281" font-family="ui-monospace, Menlo, monospace" font-size="17" fill="#6ee7b7" text-anchor="middle">rag-modular-2023</text>
+
+  <!-- year badge -->
+  <rect x="1066" y="34" width="70" height="32" rx="16" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf" stroke-opacity="0.55"/>
+  <text x="1101" y="56" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#6ee7b7" text-anchor="middle">2023</text>
+
+  <!-- motif -->
+  
+  <g fill="none" stroke-linecap="round">
+    <ellipse cx="840" cy="118" rx="95" ry="26" fill="#f8fafc" fill-opacity="0.08" stroke="#2dd4bf" stroke-width="4"/>
+    <path d="M745 118 L745 226 A 95 26 0 0 0 935 226 L935 118" fill="#f8fafc" fill-opacity="0.05" stroke="#2dd4bf" stroke-width="4"/>
+    <path d="M745 154 A 95 26 0 0 0 935 154" stroke="#2dd4bf" stroke-width="3" opacity="0.6"/>
+    <path d="M745 190 A 95 26 0 0 0 935 190" stroke="#2dd4bf" stroke-width="3" opacity="0.6"/>
+    <text x="840" y="146" font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#6ee7b7" stroke="none" text-anchor="middle">pgvector</text>
+    <text x="840" y="182" font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#6ee7b7" stroke="none" text-anchor="middle">FTS + RRF</text>
+    <text x="840" y="218" font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#6ee7b7" stroke="none" text-anchor="middle">memory</text>
+    <path d="M960 172 C 1000 172 1000 172 1040 172" stroke="url(#ac)" stroke-width="5"/>
+    <circle cx="1060" cy="172" r="5" fill="#6ee7b7"/>
+    <circle cx="1082" cy="172" r="5" fill="#6ee7b7" opacity="0.7"/>
+    <circle cx="1104" cy="172" r="5" fill="#6ee7b7" opacity="0.45"/>
+    <circle cx="1126" cy="172" r="5" fill="#6ee7b7" opacity="0.25"/>
+    <text x="1042" y="150" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#cbd5e1" stroke="none">streaming</text>
+  </g>
+
+  <!-- corner credit -->
+  <text x="1160" y="334" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#94a3b8" text-anchor="end">by <tspan fill="#6ee7b7">MlvPtL</tspan></text>
+</svg>

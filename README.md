@@ -6,11 +6,9 @@ Part of the RAG line, a series of reference enterprise RAG implementations, one 
 
 This service answers questions about your own documents. It runs dense vector search and sparse keyword search inside Postgres, fuses them with Reciprocal Rank Fusion in a single query, reranks with a cross encoder, streams grounded answers token by token, remembers the conversation, and runs fully locally at no cost or against cloud models in production.
 
-![Answering a document question live on a local model](assets/videos/rag_modular-demo.gif)
+![RagChatBot banner](assets/banner.svg)
 
 The animation above is a live, unedited run. The model is a local llama3.2, the documents (including a real SEC 10-K) are indexed in pgvector, and the answer streams in grounded in them. No paid keys were used.
-
-Full recording at [assets/videos/rag_modular-demo.webm](assets/videos/rag_modular-demo.webm), full resolution screenshot at [assets/screenshots/rag_modular-sample-data-demo.png](assets/screenshots/rag_modular-sample-data-demo.png).
 
 [![CI](https://github.com/mlvpatel/rag-modular-2023/actions/workflows/ci.yml/badge.svg)](https://github.com/mlvpatel/rag-modular-2023/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) ![Postgres](https://img.shields.io/badge/Postgres-pgvector-blue) ![Coverage](https://img.shields.io/badge/coverage-86%25-brightgreen) ![License](https://img.shields.io/badge/license-MIT-green)
 
